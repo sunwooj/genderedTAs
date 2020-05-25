@@ -1,0 +1,666 @@
+<html>
+<head>
+
+<title>언어학 실험</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- FOR MTURK -->
+<script type="text/javascript" src="https://sunwooj.github.io/experiments-shared/mmturkey.0.5.js"></script> 
+
+<!-- FOR PHP DATA GATHERING -->
+<!-- <script type="text/javascript" src="https://sunwooj.github.io/experiments-shared/mmturkey-extension2.js"></script>  -->
+<!-- <script type="text/javascript" src="mmturkey-extension2.js"></script>  -->
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+<script src="gendered-tas-pilot1-server.js"></script>
+
+<link rel="stylesheet" href="https://sunwooj.github.io/experiments-shared/sliders/jquery-ui.css"></link>
+
+<link href ="gendered-tas.css" rel="stylesheet" type="text/css"/>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+</head>
+
+
+
+
+
+<!-- main html body -->
+
+<body>
+
+<div class='slide' id='intro'>   
+    <div>
+
+<br>
+<img src="https://sunwooj.github.io/experiments-shared/logos/SNU-logo.png" alt="Seoul National University" width="240">
+<!-- https://github.com/sunwooj/experiments-shared/SNU-logo.png -->
+<br><br>
+<p class='block-text2'>
+안녕하세요! 실험에 관심을 가져 주셔서 감사합니다. 참여에 앞서 아래 설명문 및 동의서를 읽어 보시기 바랍니다.
+</p>
+
+<p class='scrollbox'>
+<span class='center-text'> 설명문 </span> 
+<br><br>
+연구 과제명 : 한국어 억양이 동사 해석에 미치는 영향 <br>
+연구 책임자명 : 정선우 (인문대학 언어학과 조교수) <br>
+공동 연구자명 : 유성현
+<br><br>
+이 연구는 '언니', '형' 등과 같은 의사친족호칭어 및 '~씨' 와 같은 여타 호칭어들에 대한 사회언어학적 연구입니다. 귀하는 19세 이상의 건강인 한국어 모국어 화자이기 때문에 이 연구에 참여하도록 권유 받았습니다. 이 연구를 수행하는 서울대학교 소속의 정선우, 유성현 연구원(02-880-9039)이 귀하에게 이 연구에 대해 설명해 줄 것입니다. 이 연구는 자발적으로 참여 의사를 밝히신 분에 한하여 수행 될 것이며, 귀하께서는
+참여 의사를 결정하기 전에 본 연구가 왜 수행되는지 그리고 연구의 내용이 무엇과 관련 있는지 이해하는 것이 중요합니다. 다음 내용을 신중히 읽어보신 후 참여 의사를 밝혀 주시길 바라며, 필요하다면 가족이나 친구들과
+의논해 보십시오. 만일 어떠한 질문이 있다면 담당 연구원이 자세하게 설명해 줄 것입니다.
+<br><br>
+1. 이 연구는 왜 실시합니까?
+<br>
+이 연구의 목적은 여러 종류의 한국어 호칭어들의 사용 상황 및 이들이 가지는 사회언어학적 의미들에 대한 인식을 조사하기 위함입니다.
+<br><br>
+2. 얼마나 많은 사람이 참여합니까?
+<br>
+자발적 참여의사를 통해 모집된 만 19세 이상의 건강인/성인 한국어 모국어 화자 200명의 사람이 참여 할 것입니다.
+<br><br>
+3. 만일 연구에 참여하면 어떤 과정이 진행됩니까?
+<br>
+만일 귀하가 동의에 클릭함으로써 온라인상에서의 참여의사를 밝혀 주시면 다음과 같은 과정이 진행될 것입니다: 귀하는 설문 내용에 대한 간단한 설명을 읽으신 후, 다섯 가지의 짧은 발화 상황들을 그림과 텍스트를 통해 보시게 될 것입니다. 각 발화 상황들을 보신 후 발화자에 대해 어떠한 인상을 받으셨는지, 또 발화자와 청자와의 관계에 대해 어떠한 추측을 하셨는지에 대해 답변하시게 될 것입니다. 귀하께서는 각 발화 상황당 6가지의 같은 질문들에 답하실 것입니다 (더불어 그 밖에 하시고 싶으신 말씀이 있으시면 각 상황당 자유 기고 방식으로 기입하는 선택 질문에도 답하셔도 됩니다). 설문은 귀하가 원하는 인터넷이 가능한 모든 장소에서 참여가 가능합니다. 다만 집중해서 설문에 임하실 수 있게 조용하고 잡음이 없는 곳에서 설문을 진행하시기를 권장 드립니다. 모든 문항에 차례로 응답하여야 다음 순서로 넘어갈 수 있으며 마지막 문항까지 모두 응답하셔야 데이터 분석에 사용 가능합니다. 만약 중간에 응답을 원하지 않으시거나 실험 중지를 원하시면 언제든지 중지하셔도 됩니다. 설문 중지에 따른 불이익은 전혀 발생되지 않으며 중단하실 경우 모든 데이터는 바로 자동 삭제되어 데이터에 포함되지 않습니다. 발화자 분석 위주의 본 설문 이후 끝에 간단히 귀하의 성별, 연령, 구사하는 언어 및 출신지역을 여쭙는 간단한 설문이 진행 될 것입니다. 끝으로 사례금 지급을 위한 귀하의 연락처 수집이 있겠습니다. 연락처는 사례금 직후 파기되며 제 3자와 공유되지 않습니다.
+<br><br>
+4. 연구 참여 기간은 얼마나 됩니까?
+<br>
+약 10분이 소요될 것입니다.
+<br><br>
+5. 참여 도중 그만두어도 됩니까?
+<br>
+예, 귀하는 언제든지 어떠한 불이익 없이 참여 도중에 그만 둘 수 있습니다. 만일 귀하가 연구에 참여하는 것을 그만두고 싶다면 바로 설문응답을 중지하시거나 해당사이트에서 나가시면 됩니다. 그만 두는 경우 모아진 자료는 인터넷 창을 닫으시거나 중단하시는 즉시 자동으로 전량 폐기됩니다. 설문을 모두 마치셨는데 추후에 마음이 바뀌어 자료가 수집되는 것을 원하지 않으시면 연구 책임자에게 즉시 연락 주십시오. 추후에 자료 수집에 동의하지 않는다는 의사를 밝히신 경우 모아진 자료는 즉시 폐기됩니다.
+<br><br>
+6. 부작용이나 위험요소는 없습니까?
+<br>
+본 연구는 담화 상황에 대한 귀하의 의견을 물어보는 설문이기에 부작용은 전혀 없을 것으로 예상됩니다. 다만, 귀하의 가치관이 제시된 상황의 언어 사용 양상과 부합하지 않을 경우 경미한 거부감을 가지실 가능성이 존재합니다. 이럴 경우 귀하는
+언제든지 설문을 멈출 수 있습니다. 만일 연구 참여 도중 발생할 수 있는 부작용이나 위험 요소에 대한 질문이 있으면 담당 연구원에게 즉시 문의해 주십시오.
+<br><br>
+7. 이 연구에 참여시 참여자에게 이득이 있습니까? 
+<br>
+귀하가 이 연구에 참여함으로써 얻는 직접적인 이득은 없습니다. 그러나 귀하가 제공하는 정보는 한국어 호칭어 사용 양상에 대한 이해를 증진하는데 도움이 될 것입니다.
+<br><br>
+8. 만일 이 연구에 참여하지 않는다면 불이익이 있습니까?
+<br>
+귀하는 본 연구에 참여하지 않을 자유가 있습니다. 또한, 귀하가 본 연구에 참여하지 않아도 귀하에게는 어떠한 불이익도 없습니다.
+<br><br>
+9. 연구에서 얻은 모든 개인 정보의 비밀은 보장됩니까?
+<br>
+개인정보관리책임자는 서울대학교의 정선우(02-880-9039) 입니다. 본 연구에서 수집되는 개인정보는 성별, 연령, 출신지역, 구사 언어 및 사례 지급을 위한 휴대폰 번호입니다. 이러한 개인정보는 정선우(책임 연구자) 및
+유성현(공동 연구자)에게만 접근이 허락되며, 잠금장치가 된 PC에 엑셀 및 .csv 형태로 저장하여 보관될 것입니다. 개인식별정보인 휴대폰 번호는 사례비 지급 이후, 즉각 폐기합니다. 그 외 정보는 서울대학교 연구윤리 지침에 따라 가능한 한 영구 보관할 예정입니다. 저희는 이 연구를 통해 얻은 모든 개인 정보의 비밀 보장을 위해 최선을 다할 것입니다. 이 연구에서
+얻어진 개인 정보가 학회지나 학회에 공개 될 때 귀하의 이름 및 기타 개인 정보는 사용되지 않을 것입니다. 그러나 만일 법이 요구하면 귀하의 개인정보는 제공될 수도 있습니다. 또한 모니터 요원, 점검 요원,
+생명윤리위원회는 연구참여자의 개인 정보에 대한 비밀 보장을 침해하지 않고 관련규정이 정하는 범위 안에서 본 연구의 실시 절차와 자료의 신뢰성을 검증하기 위해 연구 결과를 직접 열람할 수 있습니다. 귀하가 본 동의서에
+서명하는 것은, 이러한 사항에 대하여 사전에 알고 있었으며 이를 허용한다는 동의로 간주될 것입니다.
+<br><br>
+10. 이 연구에 참가하면 사례가 지급됩니까?
+<br>
+귀하의 연구 참여시 감사의 뜻으로 스타벅스 커피 기프티콘 (1장, 5000원 상당)이 증정될 것입니다. 기프티콘은 귀하의 휴대폰으로 발송됩니다. 사례비를 지급받기 위해서는 설문을 끝까지 완료하셔야 합니다.       
+<br><br>
+11. 연구에 대한 문의는 어떻게 해야 됩니까?
+<br>
+본 연구에 대해 질문이 있거나 연구 중간에 문제가 생길 시 다음 연구 담당자에게 연락하십시오.
+<br>
+이름: 정선우 <br> 전화번호: 02-880-9039, 010-2120-6327               
+<br><br>
+만일 어느 때라도 연구참여자로서 귀하의 권리에 대한 질문이 있다면 다음의 서울대학교 생명윤리위원회에 연락하십시오. <br>
+서울대학교 생명윤리위원회 (SNUIRB) <br> 
+전화번호: 02-880-5153 <br>
+이메일: irb@snu.ac.kr
+<br><br>
+<span class='center-text'> 동의서 </span> 
+<br><br>
+연구 과제명 : 한국어 억양이 동사 해석에 미치는 영향 <br>
+연구 책임자명 : 정선우 (인문대학 언어학과, 조교수) 
+<br><br>
+1. 나는 이 설명서를 읽었으며 이에 대해 충분히 생각하였습니다. <br>
+2. 나는 위험과 이득에 관하여 읽었으며 나의 질문에 만족할 만한 답변을 얻었습니다. <br>
+3. 나는 이 연구에 참여하는 것에 대하여 자발적으로 동의합니다. <br>
+4. 나는 이 연구에서 얻어진 나에 대한 정보를 현행 법률과 생명윤리위원회 규정이 허용하는 범위 내에서 연구자가 수집하고 처리하는 데 동의합니다. <br>
+5. 나는 담당 연구자나 위임 받은 대리인이 연구를 진행하거나 결과 관리를 하는 경우와 법률이 규정한 국가 기관 및 서울대학교 생명윤리위원회가 실태 조사를 하는 경우에는 비밀로 유지되는 나의 개인 신상 정보를 확인하는 것에 동의합니다. <br>
+6. 나는 언제라도 이 연구의 참여를 철회할 수 있고 이러한 결정이 나에게 어떠한 해도 되지 않을 것이라는 것을 압니다. <br>
+7. 나는 수집되는 자료가 본 연구 이외에 연구책임자 및 다른 연구자의 연구의 목적으로 사용되는 것에 동의합니다.
+8. 나는 나의 성별, 연령 출신지역에 대한 개인 정보가 수집되는 것을 알고 있으며, 연구에 사용되는 것을 허락합니다.
+<br><br>
+동의서에 동의하시고 실험 참여를 원하시면 아래 항목을 체크 하시고 실험 시작 버튼을 눌러주세요.
+</p>
+
+<form class='center-text'>
+  <input type='checkbox' id='consent' name='consent' value='1'> 위 내용을 이해 했으며 실험 참여에 동의합니다. 
+</form>
+
+<br><br>
+<button type='button' id='gotoInstructions'>실험으로</button>
+<br><br> 
+<p><span style='color: blue' id="checkboxWarning"></span></p>
+
+    </div>
+</div>
+
+
+
+
+<div class='slide' id='instructions'>
+    <div>
+
+<br><br>
+<p class='block-text'> 이 설문에서 귀하는 다섯 가지의 짧은 발화 상황들을 그림과 텍스트를 통해 보시게 될 것입니다. 각 발화 상황들을 보신 후 발화자에 대해 어떠한 인상을 받으셨는지, 또 발화자와 청자와의 관계에 대해 어떠한 추측을 하셨는지에 대해 답변하면 됩니다. 귀하는 각 발화 상황당 총 여섯 가지의 같은 질문들에 답하실 것입니다 (더불어 그 밖에 하시고 싶으신 말씀이 있으시면 각 상황당 자유 기고 방식으로 기입하는 선택 질문에도 답하셔도 됩니다). </p>
+
+
+
+
+<p class='block-text'> 설문은 인터넷이 가능한 모든 장소에서 참여가 가능합니다. 다만 집중해서 설문에 임하실 수 있게 조용한 곳에서 설문을 진행하시길 권장 드립니다. 참여하시는 순간부터 모든 데이터는 자동으로 저장됩니다. 모든 문항에 차례로 응답하여야 다음 순서로 넘어갈 수 있으며 마지막 문항까지 모두 응답하셔야 데이터 분석에 사용가능합니다. 발화 해석/판단 설문 이후 끝에 간단히 귀하의 성별, 연령, 구사하는 언어 및 출신지역을 여쭙는 간단한 설문이 진행 될 것입니다. </p>
+
+<p class='block-text'> <strong> 이 설문은 귀하의 집중을 요구하는 인지 실험입니다. 실험에 참여하시는 동안은 실험 내용에만 주의를 기울여 주시고 발화 상황들을 주의 깊게 살펴 주시기 바랍니다. 감사합니다! </strong> </p>
+
+<br>
+<button type='button' id='startbutton'>실험 시작</button>
+
+    </div>
+</div>
+
+
+
+
+<!-- Main experiment starts here -->
+<div class='slide' id='stage'>
+    <div>
+        <div>
+
+
+<p><span style="font-weight: bold; color: #8C1515;"> 상황 5 가지 중 <span class="item_number">{{}}</span> 번째</span></p>
+
+
+<!-- Main visual/contextual stimuli displayed here -->
+<form id='StimulusDisplay'>
+<span style="font-weight: bold;" class='currentSpGen'>{{}}</span> 발화자가 
+자신보다 나이가 많은 
+<span style="font-weight: bold;" class='currentAddGen'>{{}}</span> 청자를 
+'<span style="font-weight: bold;" class='currentTA'>{{}}</span>'라 불렀다: 
+<br>
+<img id="currentPicture" width="420">
+<source src="#"></img>
+<br>
+</form>
+
+
+
+
+<!-- Q1: Naturalness rating -->
+<form class='responseForm1' id='responseForm1'>
+
+<p><span style="font-size: 80%; font-weight: bold; color: #8C1515; text-align: center;"> 질문 8개 중 1-3</p>
+
+<p class='block-text2'> [질문 1]: 발화자는 어떤 성격일 것 같습니까? 아래 표현들이 얼마나 발화자의 성격에 부합할 것 같은지 체크해 주십시오.
+</p>
+
+
+<table align='center'>
+    <tr>
+        <td style="text-align: center; font-weight: bold; width: 48px;"> 발화자의 </td>
+        <td style="text-align: left; font-size: 80%;" colspan="3"> (전혀 그렇지 않을 것) </td>
+        <td> </td>
+        <td> </td>
+        <td style="text-align: right; font-size: 80%;" colspan="2"> (매우 그럴 것) </td>
+    </tr>
+    <tr>
+        <th style="text-align: center; width: 48px;"> <span class='cellLabel'> 성격 </span> </th>
+        <th> 1 </th>
+        <th> 2 </th>
+        <th> 3 </th>
+        <th> 4 </th>
+        <th> 5 </th>
+        <th> 6 </th>
+        <th> 7 </th>
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 48px;"> <span class='cellLabel'>털털한: </span> </td>
+        <td><input type="radio" class="radio1" name="tultul" value="1" /></td>
+        <td><input type="radio" class="radio1" name="tultul" value="2" /></td>
+        <td><input type="radio" class="radio1" name="tultul" value="3" /></td>
+        <td><input type="radio" class="radio1" name="tultul" value="4" /></td>
+        <td><input type="radio" class="radio1" name="tultul" value="5" /></td>
+        <td><input type="radio" class="radio1" name="tultul" value="6" /></td>
+        <td><input type="radio" class="radio1" name="tultul" value="7" /></td>
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 48px;"> <span class='cellLabel'>애교스러운: </span> </td>
+        <td><input type="radio" class="radio1" name="aegyo" value="1" /></td>
+        <td><input type="radio" class="radio1" name="aegyo" value="2" /></td>
+        <td><input type="radio" class="radio1" name="aegyo" value="3" /></td>
+        <td><input type="radio" class="radio1" name="aegyo" value="4" /></td>
+        <td><input type="radio" class="radio1" name="aegyo" value="5" /></td>
+        <td><input type="radio" class="radio1" name="aegyo" value="6" /></td>
+        <td><input type="radio" class="radio1" name="aegyo" value="7" /></td>
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 48px;"> <span class='cellLabel'>외향적인: </span> </td>
+        <td><input type="radio" class="radio1" name="extro" value="1" /></td>
+        <td><input type="radio" class="radio1" name="extro" value="2" /></td>
+        <td><input type="radio" class="radio1" name="extro" value="3" /></td>
+        <td><input type="radio" class="radio1" name="extro" value="4" /></td>
+        <td><input type="radio" class="radio1" name="extro" value="5" /></td>
+        <td><input type="radio" class="radio1" name="extro" value="6" /></td>
+        <td><input type="radio" class="radio1" name="extro" value="7" /></td>
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 48px;"> <span class='cellLabel'>예의바른: </span> </td>
+        <td><input type="radio" class="radio1" name="polite" value="1" /></td>
+        <td><input type="radio" class="radio1" name="polite" value="2" /></td>
+        <td><input type="radio" class="radio1" name="polite" value="3" /></td>
+        <td><input type="radio" class="radio1" name="polite" value="4" /></td>
+        <td><input type="radio" class="radio1" name="polite" value="5" /></td>
+        <td><input type="radio" class="radio1" name="polite" value="6" /></td>
+        <td><input type="radio" class="radio1" name="polite" value="7" /></td>
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 48px;"> <span class='cellLabel'>여성스러운: </span> </td>
+        <td><input type="radio" class="radio1" name="feminine" value="1" /></td>
+        <td><input type="radio" class="radio1" name="feminine" value="2" /></td>
+        <td><input type="radio" class="radio1" name="feminine" value="3" /></td>
+        <td><input type="radio" class="radio1" name="feminine" value="4" /></td>
+        <td><input type="radio" class="radio1" name="feminine" value="5" /></td>
+        <td><input type="radio" class="radio1" name="feminine" value="6" /></td>
+        <td><input type="radio" class="radio1" name="feminine" value="7" /></td>
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 48px;"> <span class='cellLabel'>남성스러운: </span> </td>
+        <td><input type="radio" class="radio1" name="masculine" value="1" /></td>
+        <td><input type="radio" class="radio1" name="masculine" value="2" /></td>
+        <td><input type="radio" class="radio1" name="masculine" value="3" /></td>
+        <td><input type="radio" class="radio1" name="masculine" value="4" /></td>
+        <td><input type="radio" class="radio1" name="masculine" value="5" /></td>
+        <td><input type="radio" class="radio1" name="masculine" value="6" /></td>
+        <td><input type="radio" class="radio1" name="masculine" value="7" /></td>
+    </tr>
+</table>
+
+<br>
+
+<p class='block-text2'> [질문 2]: 발화자의 나이는 어느정도 될 것 같습니까? </p>
+<p class='opt-responses'>
+    <input type='radio' class='radio1' name='spage' value='10s' /> 10대 &nbsp;&nbsp;
+    <input type='radio' class='radio1' name='spage' value='20s' /> 20대 &nbsp;&nbsp;
+    <input type='radio' class='radio1' name='spage' value='30s' /> 30대 &nbsp;&nbsp;
+    <input type='radio' class='radio1' name='spage' value='40s' /> 40대 &nbsp;&nbsp;
+    <input type='radio' class='radio1' name='spage' value='50s' /> 50대 &nbsp;&nbsp;
+    <input type='radio' class='radio1' name='spage' value='60s' /> 60대 이상
+</p>
+
+
+<p class='block-text2'> [질문 3]: 발화자가 속할 법한 항목들을 모두 고르시오. </p>
+
+<table class='checkboxTable' align='center'>
+    <tr>
+        <td class='checktd'> <input type='checkbox' class='checkbox1' name='spvoc' value='activist' /> 운동권 </td>
+        <td class='checktd'> <input type='checkbox' class='checkbox1' name='spvoc' value='tv' /> 방송인 </td>
+        <td class='checktd'> <input type='checkbox' class='checkbox1' name='spvoc' value='worker' /> 회사원 </td>
+        <td class='checktd'> <input type='checkbox' class='checkbox1' name='spvoc' value='gay' /> 게이/레즈비언 </td>
+    </tr>
+    <tr>
+        <td class='checktd'> <input type='checkbox' class='checkbox1' name='spvoc' value='yogi' /> 요가강사 </td>
+        <td class='checktd'> <input type='checkbox' class='checkbox1' name='spvoc' value='athlete' /> 운동선수 </td>
+        <td class='checktd'> <input type='checkbox' class='checkbox1' name='spvoc' value='scientist' /> 과학자/IT 업계자 </td>
+        <td class='checktd'> <input type='checkbox' class='checkbox1' name='spvoc' value='clothing' /> 옷가게 주인 </td>
+    </tr>
+    <tr>
+        <td class='checktd'> <input type='checkbox' class='checkbox1' name='spvoc' value='army' /> 군인 </td>
+        <td class='checktd'> <input type='checkbox' class='checkbox1' name='spvoc' value='service' /> 서비스업 종사자 </td>
+        <td class='checktd' colspan="2"> <input type='checkbox' class='checkbox1' name='spvoc' value='makeup' /> 네일/메이크업 업계 종사자 </td>
+    </tr>
+    <!-- <tr>
+        <td class='checktd' colspan="2"> <input type='checkbox' name='spvoc' value='tech' /> IT/컴퓨터 업계 종사자 </td>
+        <td> </td>
+        <td> </td>
+    </tr> -->
+</table>
+
+<br>
+
+<button type='button' id='nextquestion'>다음 질문들로 계속</button>
+
+<!-- Warning message in case the first part doesn't get a response -->
+<p><span style='color: blue' id="warning1"></span></p>
+
+</form>
+
+
+
+
+<form class='responseForm2' id='responseForm2'>
+
+<p><span style="font-size: 80%; font-weight: bold; color: #8C1515; text-align: center;"> 질문 8개 중 4-5</p>
+
+<p class='block-text2'> [질문 4]: 발화자와 청자는 어떤 사이일 것 같습니까? 아래와 같은 사이일 가능성이 얼마나 있는지 체크해 주십시오.
+</p>
+
+<table align='center'>
+    <tr>
+        <td style="text-align: center; font-weight: bold; width: 58px;"> 발화자와 </td>
+        <td style="text-align: left; font-size: 80%;" colspan="3"> (전혀 가능성 없음) </td>
+        <td> </td>
+        <td> </td>
+        <td style="text-align: right; font-size: 80%;" colspan="2"> (매우 가능함) </td>
+    </tr>
+    <tr>
+        <th style="text-align: center; width: 58px;"> <span class='cellLabel'> 청자의 관계 </span> </th>
+        <th> 1 </th>
+        <th> 2 </th>
+        <th> 3 </th>
+        <th> 4 </th>
+        <th> 5 </th>
+        <th> 6 </th>
+        <th> 7 </th>
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 58px;"> <span class='cellLabel'> 형제/자매: </span> </td>
+        <td><input type="radio" class="radio2" name="sibling" value="1" /></td>
+        <td><input type="radio" class="radio2" name="sibling" value="2" /></td>
+        <td><input type="radio" class="radio2" name="sibling" value="3" /></td>
+        <td><input type="radio" class="radio2" name="sibling" value="4" /></td>
+        <td><input type="radio" class="radio2" name="sibling" value="5" /></td>
+        <td><input type="radio" class="radio2" name="sibling" value="6" /></td>
+        <td><input type="radio" class="radio2" name="sibling" value="7" /></td>
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 58px;"> <span class='cellLabel'> 애인/파트너: </span> </td>
+        <td><input type="radio" class="radio2" name="partner" value="1" /></td>
+        <td><input type="radio" class="radio2" name="partner" value="2" /></td>
+        <td><input type="radio" class="radio2" name="partner" value="3" /></td>
+        <td><input type="radio" class="radio2" name="partner" value="4" /></td>
+        <td><input type="radio" class="radio2" name="partner" value="5" /></td>
+        <td><input type="radio" class="radio2" name="partner" value="6" /></td>
+        <td><input type="radio" class="radio2" name="partner" value="7" /></td>
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 58px;"> <span class='cellLabel'> 친한 선/후배: </span> </td>
+        <td><input type="radio" class="radio2" name="clfriend" value="1" /></td>
+        <td><input type="radio" class="radio2" name="clfriend" value="2" /></td>
+        <td><input type="radio" class="radio2" name="clfriend" value="3" /></td>
+        <td><input type="radio" class="radio2" name="clfriend" value="4" /></td>
+        <td><input type="radio" class="radio2" name="clfriend" value="5" /></td>
+        <td><input type="radio" class="radio2" name="clfriend" value="6" /></td>
+        <td><input type="radio" class="radio2" name="clfriend" value="7" /></td>
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 58px;"> <span class='cellLabel'> 직장 선/후배: </span> </td>
+        <td><input type="radio" class="radio2" name="wrkfriend" value="1" /></td>
+        <td><input type="radio" class="radio2" name="wrkfriend" value="2" /></td>
+        <td><input type="radio" class="radio2" name="wrkfriend" value="3" /></td>
+        <td><input type="radio" class="radio2" name="wrkfriend" value="4" /></td>
+        <td><input type="radio" class="radio2" name="wrkfriend" value="5" /></td>
+        <td><input type="radio" class="radio2" name="wrkfriend" value="6" /></td>
+        <td><input type="radio" class="radio2" name="wrkfriend" value="7" /></td>
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 58px;"> <span class='cellLabel'> 최근 알게된 지인: </span> </td>
+        <td><input type="radio" class="radio2" name="acquaint" value="1" /></td>
+        <td><input type="radio" class="radio2" name="acquaint" value="2" /></td>
+        <td><input type="radio" class="radio2" name="acquaint" value="3" /></td>
+        <td><input type="radio" class="radio2" name="acquaint" value="4" /></td>
+        <td><input type="radio" class="radio2" name="acquaint" value="5" /></td>
+        <td><input type="radio" class="radio2" name="acquaint" value="6" /></td>
+        <td><input type="radio" class="radio2" name="acquaint" value="7" /></td>
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 58px;"> <span class='cellLabel'> 처음 만난 사이: </span> </td>
+        <td><input type="radio" class="radio2" name="strange" value="1" /></td>
+        <td><input type="radio" class="radio2" name="strange" value="2" /></td>
+        <td><input type="radio" class="radio2" name="strange" value="3" /></td>
+        <td><input type="radio" class="radio2" name="strange" value="4" /></td>
+        <td><input type="radio" class="radio2" name="strange" value="5" /></td>
+        <td><input type="radio" class="radio2" name="strange" value="6" /></td>
+        <td><input type="radio" class="radio2" name="strange" value="7" /></td>
+    </tr>
+</table>
+
+<br>
+
+
+<p class='block-text2'> [질문 5]: 발화자는 청자에 대해 어떤 태도를 가지고 있을 것 같습니까? 아래 결론들이 얼마나 적합한지 체크해 주십시오.
+</p>
+
+<table align='center' style="width: 580;">
+    <tr>
+        <td style="text-align: center; font-weight: bold; width: 104px;"> 발화자의 청자에 </td>
+        <td style="text-align: left; font-size: 80%;" colspan="3"> (전혀 가능성 없음) </td>
+        <td> </td>
+        <td> </td>
+        <td style="text-align: right; font-size: 80%;" colspan="2"> (매우 가능함) </td>
+    </tr>
+    <tr>
+        <th style="text-align: center; width: 104px;"> <span class='cellLabel'> 대한 태도 </span> </th>
+        <th> 1 </th>
+        <th> 2 </th>
+        <th> 3 </th>
+        <th> 4 </th>
+        <th> 5 </th>
+        <th> 6 </th>
+        <th> 7 </th>
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 104px;"> <span class='cellLabel'>청자와 친하다: </span> </td>
+        <td><input type="radio" class="radio2" name="closeness" value="1" /></td>
+        <td><input type="radio" class="radio2" name="closeness" value="2" /></td>
+        <td><input type="radio" class="radio2" name="closeness" value="3" /></td>
+        <td><input type="radio" class="radio2" name="closeness" value="4" /></td>
+        <td><input type="radio" class="radio2" name="closeness" value="5" /></td>
+        <td><input type="radio" class="radio2" name="closeness" value="6" /></td>
+        <td><input type="radio" class="radio2" name="closeness" value="7" /></td>
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 104px;"> <span class='cellLabel'>청자에게 호감이 있다: </span> </td>
+        <td><input type="radio" class="radio2" name="affinity" value="1" /></td>
+        <td><input type="radio" class="radio2" name="affinity" value="2" /></td>
+        <td><input type="radio" class="radio2" name="affinity" value="3" /></td>
+        <td><input type="radio" class="radio2" name="affinity" value="4" /></td>
+        <td><input type="radio" class="radio2" name="affinity" value="5" /></td>
+        <td><input type="radio" class="radio2" name="affinity" value="6" /></td>
+        <td><input type="radio" class="radio2" name="affinity" value="7" /></td>
+    </tr>
+    <tr>
+        <td style="text-align: left; width: 104px;"> <span class='cellLabel'>청자를 윗사람으로 생각한다: </span> </td>
+        <td><input type="radio" class="radio2" name="higher" value="1" /></td>
+        <td><input type="radio" class="radio2" name="higher" value="2" /></td>
+        <td><input type="radio" class="radio2" name="higher" value="3" /></td>
+        <td><input type="radio" class="radio2" name="higher" value="4" /></td>
+        <td><input type="radio" class="radio2" name="higher" value="5" /></td>
+        <td><input type="radio" class="radio2" name="higher" value="6" /></td>
+        <td><input type="radio" class="radio2" name="higher" value="7" /></td>
+    </tr>
+</table>
+
+<br>
+
+<button type='button' id='nextquestion2'>다음 질문들로 계속</button>
+
+<!-- Warning message in case the first part doesn't get a response -->
+<p><span style='color: blue' id="warning2"></span></p>
+
+</form>
+
+
+
+<form class='responseForm3' id='responseForm3'>
+
+<p><span style="font-size: 80%; font-weight: bold; color: #8C1515; text-align: center;"> 질문 8개 중 6-8</p>
+
+<!-- Optional responses -->
+<p class='block-text2'> [질문 6]: 귀하께서는 위 상황과 같은 방식의 호칭어 사용을 주변에서 경험하신 적이 있습니까? </p>
+<p class='opt-responses'>
+    <input type='radio' class='radio3' name='frequency' value='0' /> 없었음 &nbsp;&nbsp;
+    <input type='radio' class='radio3' name='frequency' value='1' /> 가끔 있었음 &nbsp;&nbsp;
+    <input type='radio' class='radio3' name='frequency' value='2' /> 종종 있었음 &nbsp;&nbsp;
+    <input type='radio' class='radio3' name='frequency' value='3' /> 자주 있었음 &nbsp;&nbsp;
+</p>
+
+<p class='block-text2'>[질문 7]: (선택 답변 가능) 경험이 있으시다면 주로 어떤 상황에서 어떤 분들이 (본인 포함) 사용하시는 것을 들으셨습니까?</p>
+
+<input type='text' id="commentBox1" class="commentBox" style="width: 400px;" value="" />
+
+<br>
+
+<p class='block-text2'>[질문 8]: (선택 답변 가능) 그 밖에 위 상황/호칭어에 관해 더 하시고 싶으신 말씀이 있으십니까?</p>
+
+<input type='text' id="commentBox2" class="commentBox" style="width: 400px;" value="" />
+
+<br>
+
+<button type='button' id='continue'>다음 상황으로 계속</button>
+
+<!-- Warning message in case the second part doesn't get a response -->
+<p><span style='color: blue' id="warning3"></span></p>
+
+</form>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Demographic information slide -->
+<div class='slide' id='language'>
+    <div>
+
+
+<form id='languageForm'>
+
+<p class='questionSent'> 
+본 실험이 끝났습니다. 끝으로 아래 설문을 간단히 작성해 주시기 바랍니다. 설문 뒤 실험 끝내기를 클릭하시면 나타나는 회색 바탕의 실험 결과를 전체 선택 하셔서 복사하신 뒤 sunwooj@snu.ac.kr 로 보내주시기 바랍니다.
+</p> <br>
+
+
+<form id='genderForm'>
+
+<p class='questionSent'> 1. 귀하의 성별은 어떻게 되십니까? </p>
+
+<p class ='questionSent'>
+<input type='radio' class='radio3' name='ptgen' value='Mcis' /> 남성 (시스/cis) &nbsp;&nbsp;&nbsp;&nbsp;
+<input type='radio' class='radio3' name='ptgen' value='Mtrans' /> 남성 (트랜스/trans) <br>
+<input type='radio' class='radio3' name='ptgen' value='Fcis' /> 여성 (시스/cis) &nbsp;&nbsp;&nbsp;&nbsp;
+<input type='radio' class='radio3' name='ptgen' value='Ftrans' /> 여성 (트랜스/trans) <br>
+<input type='radio' class='radio3' name='ptgen' value='NB' /> 넌바이너리 (Non-binary) <br>
+<input type='radio' class='radio3' name='ptgen' value='other' /> 기타: <input type='text' name='ptgen2' id='ptgen_com' />
+</p>
+
+<!-- <table align='left' style="width: 480;">
+    <tr>
+        <td style="width: 40%"> <input type='radio' class='radio3' name='ptgen' value='Mcis' /> 남성 (시스/cis) </td>
+        <td style="width: 40%"> <input type='radio' class='radio3' name='ptgen' value='Mtrans' /> 남성 (트랜스/trans) </td>
+    </tr>
+    <tr>
+        <td style="width: 40%"> <input type='radio' class='radio3' name='ptgen' value='Fcis' /> 여성 (시스/cis) </td>
+        <td style="width: 40%"> <input type='radio' class='radio3' name='ptgen' value='Ftrans' /> 여성 (트랜스/trans) </td>
+    </tr>
+    <tr>
+        <td style="width: 40%"> <input type='radio' class='radio3' name='ptgen' value='NB' /> 넌바이너리 (Non-binary) </td>
+        <td style="width: 40%"> <input type='radio' class='radio3' name='ptgen' value='other' /> 기타: <input type='text' name='ptgen2' id='ptgen_com' /> </td>
+    </tr>
+</table> -->
+
+</form>
+
+
+<form id='ageForm'>
+
+<p class='questionSent'> 2. 귀하의 나이는 어떻게 되십니까? </p>
+
+<p class='questionSent'>
+    <input type='radio' class='radio3' name='ptage' value='20s' /> 20대 &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type='radio' class='radio3' name='ptage' value='30s' /> 30대 &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type='radio' class='radio3' name='ptage' value='40s' /> 40대 &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type='radio' class='radio3' name='ptage' value='50s' /> 50대 &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type='radio' class='radio3' name='ptage' value='60s' /> 60대 이상 
+</p>
+
+<!-- <table align='left' style="width: 480;">
+    <tr style="text-align: left;">
+        <td style="width: 20%"> <input type='radio' class='radio3' name='ptage' value='20s' /> 20대 </td>
+        <td style="width: 20%"> <input type='radio' class='gen' name='ptage' value='30s' /> 30대 </td>
+        <td style="width: 20%"> <input type='radio' class='radio3' name='ptage' value='40s' /> 40대 </td>
+    </tr>
+    <tr style="text-align: left;">
+        <td style="width: 20%"> <input type='radio' class='radio3' name='ptage' value='50s' /> 50대 </td>
+        <td style="width: 20%"> <input type='radio' class='radio3' name='ptage' value='60s' /> 60대 이상 </td>
+    </tr>
+</table> -->
+
+</form>
+
+
+
+
+<form id='regionForm'>
+<p class='questionSent'> 3. 귀하께서 5세-20세 사이 가장 오래 거주하신 지역이 어디이십니까? </p>
+
+<p class='questionSent'>
+    <input type='radio' class='reg' name='ptreg' value='seoul' /> 서울/경기 &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type='radio' class='reg' name='ptreg' value='jeolla' /> 전남/전북 &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type='radio' class='reg' name='ptreg' value='gyeongsang' /> 경남/경북 &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type='radio' class='reg' name='ptreg' value='chungcheong' /> 충남/충북 <br>
+    <input type='radio' class='reg' name='ptreg' value='gangwon' /> 강원도 &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type='radio' class='reg' name='ptreg' value='jeju' /> 제주도 &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type='radio' class='reg' name='ptreg' value='abroad' /> 외국
+</p>
+
+</form>
+
+
+
+
+<form id='ethnicityForm'>
+<p class='questionSent'> 4. 귀하께서 한국어 이외에 구사하시는 언어가 있으십니까? 있으시다면 구사하시는 언어들을 모두 적어주시기 바랍니다.
+<br>
+<input type='text' id='lang_com' value="" />
+</p>
+</form>
+
+
+
+
+<form id='commentsForm'>
+<p class='questionSent'>5. 그 밖에 실험에 대해 하시고 싶으신 말씀이나 의견이 있으십니까? 있으시다면 아래에 의견을 남겨 주시기 바랍니다.
+<br>
+<input type='text' id='gen_com' value="" />
+</p>
+</form>
+
+
+
+
+<form id='contactForm'>
+<p class='questionSent'>6. 귀하께 사례품 (스타벅스 기프티콘)을 전송하려면 귀하의 휴대폰 번호가 필요합니다. 이 번호는 기프티콘 전송 후 즉시 폐기되고 제 3자와 공유되지 않습니다. 사례품 지급을 위해 귀하의 휴대폰 번호를 남겨주시기 바랍니다.
+<br>
+<input type='text' id='contact' value="" />
+</p>
+</form>
+
+
+</form>
+
+<br>
+
+
+<p><span style='color: blue' id="demoWarning"></span></p>
+
+<button type='button' id='lgsubmit'>실험 끝내기</button>
+
+    </div>
+</div>
+
+
+<div class='slide' id='finish'>
+<p>실험이 끝났습니다. 참여해 주셔서 매우 감사합니다! 아래에 뜨는 회색 바탕의 실험 결과를 전체 선택 하셔서 (맥: cmd + a, 윈도우: ctrl + a) 복사하신 뒤 (맥: cmd + c, 윈도우: ctrl + c) 반드시 연구자 이메일로 sunwooj@snu.ac.kr 실험 결과를 보내주시기 바랍니다 (붙여넣기 사용; 맥: cmd + v, 윈도우: ctrl + v). </p>
+</div>
+
+</body>
+</html>
