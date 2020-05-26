@@ -38,6 +38,39 @@ label {
     display: block;
 }
 
+table {
+    width: 480px;
+}
+
+th {
+    width: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    width: 20px;
+    text-align: center;
+}
+
+.tab { 
+    margin-left: 40px; 
+}
+
+.wideTable {
+    width: 640px;
+}
+
+.checkboxTable {
+    text-align: center;
+    width: 640px;
+}
+
+.checktd {
+    width: 48px;
+    text-align: left;
+}
+
 .responseText{ 
     background: white;
     padding: 4px 4px 4px 4px;
@@ -66,6 +99,13 @@ label {
 .block-text {
   width: 500px;
   text-align: justify;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.opt-responses {
+  width: 540px;
+  text-align: center;
   margin: 0 auto;
   margin-bottom: 1em;
 }
