@@ -1,7 +1,7 @@
 //(Uncomment below if collecting data with php/server)
 
-// var experimentName = "gendered-tas-pilot1";
-// var submitAddress = "http://hosting02.snu.ac.kr/~sunwooj/cgi-bin/process2.php";
+var experimentName = "gendered-tas-pilot1";
+var submitAddress = "http://hosting02.snu.ac.kr/~sunwooj/cgi-bin/process2.php";
 
 
 // List of stimuli
